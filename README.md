@@ -4,6 +4,8 @@ Web3Beacon is a responsive, beginner-friendly guide to the decentralized web. It
 
 The site is built with semantic HTML, CSS, and a small amount of JavaScript. There is no framework or build step.
 
+**Live site:** [https://maanavkrishna.github.io/Web3Beacon/](https://maanavkrishna.github.io/Web3Beacon/)
+
 ## What the guide covers
 
 | Concept | How the site explains it |
