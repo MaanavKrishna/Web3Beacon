@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 620" role="img" aria-labelledby="title desc">
+  <title id="title">A Web3 creative space</title>
+  <desc id="desc">A digital studio brings together a connected wallet, a collectible, an on-chain record, and a community vote.</desc>
+  <defs>
+    <linearGradient id="art" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#bcebd4"/><stop offset=".55" stop-color="#6caf9c"/><stop offset="1" stop-color="#1e6a69"/></linearGradient>
+    <linearGradient id="badge" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffe7a8"/><stop offset="1" stop-color="#ffbf6d"/></linearGradient>
+    <filter id="panel-shadow" x="-25%" y="-25%" width="160%" height="170%"><feDropShadow dx="0" dy="24" stdDeviation="22" flood-color="#051b20" flood-opacity=".32"/></filter>
+    <filter id="card-shadow" x="-30%" y="-30%" width="170%" height="180%"><feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#051b20" flood-opacity=".24"/></filter>
+    <clipPath id="art-clip"><rect x="241" y="247" width="179" height="154" rx="13"/></clipPath>
+  </defs>
+  <circle cx="361" cy="293" r="275" fill="#3a7469" opacity=".22"/>
+  <circle cx="361" cy="293" r="235" fill="none" stroke="#a5d3bf" stroke-opacity=".26" stroke-width="2" stroke-dasharray="2 12"/>
+  <path d="M54 89h31M565 72h34M648 331h30M60 354h30M589 556h36" stroke="#b8dfc9" stroke-opacity=".38" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="72" cy="134" r="4" fill="#ffd782"/><circle cx="637" cy="216" r="5" fill="#cef0a9"/><circle cx="601" cy="556" r="3" fill="#cef0a9"/>
+  <path d="M100 498c-34 6-47 34-47 59M585 120c30-11 45-34 51-65" fill="none" stroke="#b9dec6" stroke-opacity=".55" stroke-width="2" stroke-dasharray="5 7"/>
+
+  <g transform="rotate(-4 350 292)" filter="url(#panel-shadow)">
+    <rect x="112" y="72" width="505" height="450" rx="22" fill="#f6faf5" stroke="#b7d1c6" stroke-width="2"/>
+    <path d="M134 72h461a22 22 0 0 1 22 22v31H112V94a22 22 0 0 1 22-22Z" fill="#e6f2e8"/>
+    <path d="M112 125h505" stroke="#c4d9cf" stroke-width="2"/>
+    <circle cx="140" cy="100" r="5" fill="#fb895d"/><circle cx="158" cy="100" r="5" fill="#ffd782"/><circle cx="176" cy="100" r="5" fill="#9ad3a8"/>
+    <rect x="225" y="88" width="251" height="24" rx="12" fill="#f8fbf6"/>
+    <circle cx="241" cy="100" r="5" fill="none" stroke="#6e9789" stroke-width="2"/><path d="m245 104 4 4" stroke="#6e9789" stroke-width="2" stroke-linecap="round"/>
+    <text x="261" y="104" fill="#648478" font-family="Arial,sans-serif" font-size="11">my-space / creator studio</text>
+    <rect x="112" y="125" width="94" height="397" fill="#e4f0e8"/>
+    <circle cx="158" cy="162" r="20" fill="#d0e9c8"/><path d="m151 162 7-7 7 7-7 7z" fill="none" stroke="#2b7664" stroke-width="2"/>
+    <path d="M137 207h42M137 233h36M137 259h42" stroke="#9fbeaf" stroke-width="7" stroke-linecap="round"/>
+    <rect x="129" y="299" width="58" height="53" rx="11" fill="#c9e4d5"/>
+    <path d="M144 326h28m-14-14v28" stroke="#357b6e" stroke-width="3" stroke-linecap="round"/>
+    <path d="M137 389h42M137 415h36" stroke="#9fbeaf" stroke-width="7" stroke-linecap="round"/>
+    <text x="236" y="162" fill="#1b4344" font-family="Arial,sans-serif" font-size="22" font-weight="700">A space you can carry.</text>
+    <text x="237" y="185" fill="#68867a" font-family="Arial,sans-serif" font-size="11">Create, collect, and take part with your wallet.</text>
+    <circle cx="250" cy="215" r="12" fill="#ffd782"/><path d="M246 217c0-3 2-6 4-6s4 3 4 6m-9 3h10" fill="none" stroke="#7d6337" stroke-width="1.5" stroke-linecap="round"/>
+    <text x="270" y="219" fill="#315a52" font-family="Arial,sans-serif" font-size="11" font-weight="700">Maya’s studio</text>
+    <rect x="235" y="238" width="190" height="175" rx="15" fill="#fff" stroke="#d2e2d9"/>
+    <g clip-path="url(#art-clip)">
+      <rect x="241" y="247" width="179" height="154" fill="url(#art)"/>
+      <circle cx="381" cy="283" r="54" fill="#bff1ca" opacity=".47"/>
+      <circle cx="302" cy="365" r="84" fill="#163f46" opacity=".52"/>
+      <path d="M241 379c55-36 87-29 128-3 18 11 35 12 51 10v18H241Z" fill="#164e55"/>
+      <path d="m322 273 25 19-8 55-34 9-22-31 9-42z" fill="#ffd782"/>
+      <path d="m322 273 25 19-26 9-29-18z" fill="#ffebac"/>
+      <path d="m321 301 26-9-8 55-18 5z" fill="#e4a953"/>
+      <circle cx="375" cy="329" r="4" fill="#e9f9e9"/><circle cx="270" cy="274" r="3" fill="#e9f9e9"/><circle cx="392" cy="359" r="3" fill="#e9f9e9"/>
+    </g>
+    <text x="242" y="435" fill="#214f4d" font-family="Arial,sans-serif" font-size="12" font-weight="700">Form / 001</text>
+    <text x="242" y="453" fill="#6d8a7f" font-family="Arial,sans-serif" font-size="10">A collectible from Maya’s studio</text>
+    <rect x="234" y="474" width="174" height="25" rx="12.5" fill="#e7f3e7"/>
+    <circle cx="248" cy="486" r="5" fill="#4a987c"/><path d="m246 486 2 2 3-4" fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="260" y="490" fill="#4a7e6b" font-family="Arial,sans-serif" font-size="10" font-weight="700">Recorded on-chain</text>
+    <rect x="442" y="238" width="147" height="127" rx="15" fill="#d9eee0" stroke="#c5dfd0"/>
+    <text x="456" y="260" fill="#4e7b66" font-family="Arial,sans-serif" font-size="10" font-weight="700">COMMUNITY VOTE</text>
+    <text x="456" y="286" fill="#214e45" font-family="Arial,sans-serif" font-size="13" font-weight="700">Fund the next</text>
+    <text x="456" y="303" fill="#214e45" font-family="Arial,sans-serif" font-size="13" font-weight="700">release?</text>
+    <rect x="456" y="322" width="118" height="10" rx="5" fill="#b9d3c0"/><rect x="456" y="322" width="86" height="10" rx="5" fill="#4e9b7a"/>
+    <text x="456" y="350" fill="#4d806c" font-family="Arial,sans-serif" font-size="10" font-weight="700">72% in favor</text>
+    <rect x="442" y="378" width="147" height="121" rx="15" fill="#fff5dc" stroke="#eddfb9"/>
+    <circle cx="470" cy="406" r="14" fill="#ffd782"/><path d="m470 397 8 9-8 9-8-9z" fill="none" stroke="#8c6a2b" stroke-width="2"/>
+    <text x="455" y="439" fill="#755c32" font-family="Arial,sans-serif" font-size="10" font-weight="700">MEMBER PASS</text>
+    <text x="455" y="459" fill="#4d4736" font-family="Arial,sans-serif" font-size="12" font-weight="700">Studio circle</text>
+    <text x="455" y="478" fill="#857759" font-family="Arial,sans-serif" font-size="10">Owned in your wallet</text>
+  </g>
+
+  <g filter="url(#card-shadow)" transform="rotate(5 154 501)">
+    <rect x="35" y="448" width="235" height="114" rx="17" fill="#cceba8" stroke="#e5f8c6" stroke-width="2"/>
+    <circle cx="66" cy="479" r="15" fill="#16544b"/><path d="M59 477h14v10H59zM59 480h14" fill="none" stroke="#d8f2c7" stroke-width="1.6"/>
+    <text x="89" y="481" fill="#315f49" font-family="Arial,sans-serif" font-size="11" font-weight="700">YOUR WALLET</text>
+    <text x="56" y="519" fill="#1c4940" font-family="Arial,sans-serif" font-size="19" font-weight="700">0x3A...91F</text>
+    <text x="56" y="540" fill="#537363" font-family="Arial,sans-serif" font-size="10">Your account goes with you</text>
+    <circle cx="236" cy="512" r="11" fill="#2c8068"/><path d="m231 512 4 4 7-8" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g filter="url(#card-shadow)" transform="rotate(11 590 81)">
+    <rect x="551" y="40" width="84" height="84" rx="18" fill="url(#badge)" stroke="#ffe8aa" stroke-width="2"/>
+    <circle cx="593" cy="82" r="23" fill="none" stroke="#956a32" stroke-width="2"/>
+    <circle cx="593" cy="82" r="8" fill="#956a32"/>
+    <circle cx="573" cy="82" r="4" fill="#956a32"/><circle cx="613" cy="82" r="4" fill="#956a32"/>
+    <path d="M578 82h7m16 0h8" stroke="#956a32" stroke-width="2"/>
+  </g>
+</svg>

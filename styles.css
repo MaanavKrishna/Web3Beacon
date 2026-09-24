@@ -197,7 +197,7 @@ h1 span { color: var(--yellow); }
   h1 { font-size: clamp(38px, 9vw, 58px); }
   .hero-lede { margin-top: 23px; font-size: 14px; }
   .hero-actions { gap: 19px; }
-  .hero-visual { margin: 20px -12px 22px; }
+  .hero-visual { width: calc(100% + 60px); margin: 20px 0 22px -30px; }
   .hero-bottom { font-size: 9px; }
   .chapter-list { display: flex; overflow-x: auto; scrollbar-width: none; }
   .chapter-list::-webkit-scrollbar { display: none; }
@@ -229,7 +229,7 @@ h1 span { color: var(--yellow); }
 @media (max-width: 380px) {
   .header-wallet { width: 39px; min-height: 36px; padding: 0; }
   .header-wallet [data-wallet-label] { display: none; }
-  .hero-visual { margin-inline: -20px; }
+  .hero-visual { width: calc(100% + 60px); margin-left: -30px; }
 }
 
 @media (prefers-reduced-motion: reduce) {

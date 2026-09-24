@@ -45,7 +45,7 @@ The wallet tests simulate provider discovery, connection, rejection, account cha
 - `index.html` — page content and structure
 - `styles.css` — layout, visual design, and responsive behavior
 - `script.js` — optional MetaMask connection
-- `web3-network.svg` — custom Web3 network illustration in the hero
+- `web3-workspace.svg` — custom Web3 studio illustration in the hero
 - `logo-mark.svg` and `favicon.svg` — Web3Beacon identity
 - `tests/wallet.test.js` — wallet interaction checks
 
