@@ -1,6 +1,6 @@
 # Common Ground
 
-Common Ground is a responsive, beginner-friendly landing page that introduces Web3 through plain-language explanations and a connected-network visual. It is built with HTML, CSS, and a small amount of JavaScript for the optional wallet button. No build step or account is required to read the page.
+Common Ground is a responsive, beginner-friendly field guide to Web3. It explains the vocabulary first, then gives concrete examples of how people use shared networks. The site uses HTML, CSS, and a small amount of JavaScript for the optional MetaMask connection. No build step or account is required to read it.
 
 ## Web3 concepts covered
 
@@ -15,11 +15,21 @@ Common Ground is a responsive, beginner-friendly landing page that introduces We
 
 ## View the site
 
-Open `index.html` in a browser. The page adapts to desktop, tablet, and mobile widths. It includes keyboard focus styles, a skip link, semantic sections, and reduced-motion support.
+Open `index.html` in a browser to read the page. The layout adapts to desktop, tablet, and mobile widths. It includes keyboard focus styles, a skip link, semantic sections, and reduced-motion support.
 
 ## Optional wallet connection
 
-Select **Connect wallet** to request access to accounts from an injected browser wallet such as MetaMask. The page displays a shortened public address after a successful connection and responds to account changes. If no compatible wallet is available, it explains what is missing. The page never requests a recovery phrase, signs a transaction, or sends funds.
+To test with the MetaMask browser extension, serve the folder locally and open the local address **in the browser where MetaMask is installed**:
+
+```sh
+python3 -m http.server 8000
+```
+
+Then visit `http://localhost:8000`, unlock MetaMask, and select **Connect MetaMask**. Approving the request shares your public account address with the page. The page displays a shortened address and responds to account changes. It discovers MetaMask through EIP-6963 when available, then checks legacy injected providers. If MetaMask is unavailable or a request is declined, it shows a clear message. It never asks for a recovery phrase, signs a transaction, or sends funds.
+
+Browser extensions may not run on `file://` pages or inside embedded browsers. A successful connection requires MetaMask to be enabled in the browser that opens the localhost page.
+
+Run the wallet interaction checks with `node --test tests/wallet.test.js`. They simulate provider discovery, connection, rejection, account changes, and a missing extension. A real MetaMask connection still needs the browser extension and user approval.
 
 ## Files
 
