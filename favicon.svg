@@ -1,5 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="9" fill="#202b58"/>
-  <path d="M32 11v42M11 32h42M17 17l30 30M47 17 17 47" stroke="#ff7958" stroke-width="6" stroke-linecap="round"/>
-  <circle cx="32" cy="32" r="6" fill="#b8e58c"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Web3Beacon icon">
+  <rect width="64" height="64" rx="13" fill="#103741"/>
+  <path d="M32 6v7M12 17l6 5M52 17l-6 5M6 31h8M58 31h-8" fill="none" stroke="#cef0a9" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="32" cy="29" r="10" fill="#ffd782"/>
+  <circle cx="32" cy="29" r="3" fill="#103741"/>
+  <path d="M27 42h10l4 16H23z" fill="#eaf4ef"/>
 </svg>

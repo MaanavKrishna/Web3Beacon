@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Web3Beacon mark">
+  <path d="M31 3v8M13 13l6 6M51 13l-6 6M4 31h9M60 31h-9" fill="none" stroke="#cef0a9" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="32" cy="29" r="11" fill="#ffd782"/>
+  <circle cx="32" cy="29" r="4" fill="#103741"/>
+  <path d="M27 42h10l5 17H22z" fill="#eaf4ef"/>
+  <path d="M23 59h18" stroke="#cef0a9" stroke-width="3" stroke-linecap="round"/>
+</svg>

@@ -3,73 +3,171 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#202b58" />
-    <meta name="description" content="A plain-English field guide to wallets, blockchains, smart contracts, NFTs, DAOs, and the ideas behind Web3." />
-    <title>Common Ground — Web3, in plain English</title>
+    <meta name="theme-color" content="#103741" />
+    <meta name="description" content="Web3Beacon is a clear, visual guide to Web3: blockchains, wallets, smart contracts, crypto, NFTs, DAOs, and what they mean in real life." />
+    <title>Web3Beacon — Find your way through Web3</title>
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
+
     <header class="site-header" id="top">
-      <div class="wrap header-inner">
-        <a class="brand" href="#top" aria-label="Common Ground, back to top"><span class="brand-symbol" aria-hidden="true">✳</span><span>common ground</span></a>
-        <nav aria-label="Main navigation"><a href="#basics">The basics</a><a href="#examples">Real examples</a><a href="#try-it">Try a wallet</a></nav>
-        <button class="header-wallet" type="button" data-connect-wallet aria-label="Connect MetaMask"><span class="wallet-square" aria-hidden="true"></span><span data-wallet-label>Connect MetaMask</span></button>
+      <div class="container header-inner">
+        <a class="brand" href="#top" aria-label="Web3Beacon, back to top">
+          <img src="logo-mark.svg" alt="" width="38" height="38" />
+          <span>Web3<span class="brand-accent">Beacon</span><span class="brand-period">.</span></span>
+        </a>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#overview">The idea</a>
+          <a href="#building-blocks">How it works</a>
+          <a href="#possibilities">Explore uses</a>
+          <a href="#reality-check">Reality check</a>
+        </nav>
+        <button class="header-wallet" type="button" data-connect-wallet aria-label="Connect MetaMask">
+          <span class="wallet-indicator" aria-hidden="true"></span>
+          <span data-wallet-label>Connect MetaMask</span>
+        </button>
       </div>
     </header>
 
     <main id="main">
       <section class="hero" aria-labelledby="hero-title">
-        <div class="wrap hero-inner">
+        <div class="container hero-grid">
           <div class="hero-copy">
-            <p class="edition">A small field guide to the decentralized web</p>
-            <h1 id="hero-title">Web3, without<br />the <span>fog.</span></h1>
-            <p class="hero-lede">You’ve probably heard the words. Crypto. NFTs. Blockchains. Here’s what they mean, what people are trying to build with them, and where a wallet fits in.</p>
-            <a class="hero-link" href="#basics">Start with the basics <span aria-hidden="true">↘</span></a>
+            <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span> A field guide for the curious</p>
+            <h1 id="hero-title">Find your way<br />through <span>Web3.</span></h1>
+            <p class="hero-lede">A lot of Web3 talk starts in the middle. Let's start at the beginning: what it is, why people care, and what to watch out for.</p>
+            <div class="hero-actions">
+              <a class="primary-link" href="#overview">Start exploring <span aria-hidden="true">↗</span></a>
+              <a class="under-link" href="#wallet">Try a wallet <span aria-hidden="true">↘</span></a>
+            </div>
+            <p class="hero-note">No jargon required. No wallet required either.</p>
           </div>
-          <div class="hero-diagram" role="img" aria-label="A sketch showing a person using a wallet to interact with a shared record and different apps">
-            <span class="diagram-caption">The short version</span>
-            <svg class="diagram-path" viewBox="0 0 520 500" fill="none" aria-hidden="true"><path d="M108 130 C170 110 197 150 236 190 S307 228 366 155 M245 230 C224 302 254 332 333 365" stroke="currentColor" stroke-width="2" stroke-dasharray="5 8"/><path d="m354 147 13 8-14 9M324 355l9 10-15 5" stroke="currentColor" stroke-width="2"/></svg>
-            <div class="diagram-piece person-piece"><span class="piece-icon person-icon" aria-hidden="true">◉</span><strong>You</strong><small>your digital identity</small></div>
-            <div class="diagram-piece wallet-piece"><span class="piece-icon wallet-icon" aria-hidden="true">▣</span><strong>Wallet</strong><small>your way in</small></div>
-            <div class="diagram-piece record-piece"><span class="piece-icon record-icon" aria-hidden="true">≋</span><strong>Shared record</strong><small>many keep a copy</small></div>
-            <div class="diagram-piece apps-piece"><span class="piece-icon apps-icon" aria-hidden="true">✦</span><strong>Apps &amp; people</strong><small>things you can do</small></div>
-            <span class="diagram-scribble">less gatekeeping<br />more participation</span>
+          <div class="hero-visual">
+            <img src="beacon-map.svg" alt="Illustration of a beacon guiding paths between a wallet, a shared record, applications, and communities" width="650" height="590" />
+            <span class="map-corner" aria-hidden="true">A signal through the noise.</span>
           </div>
         </div>
-        <div class="wrap hero-foot"><span>Read at your own pace</span><span>01 — 03</span></div>
+        <div class="container hero-bottom"><span>START HERE ↓</span><span>THE OPEN WEB, EXPLAINED</span></div>
       </section>
 
-      <section class="basics section-space" id="basics" aria-labelledby="basics-title">
-        <div class="wrap basics-grid">
-          <div class="section-side"><p class="section-index">01 / The basics</p><h2 id="basics-title">First, the<br />plain English.</h2><p>Web3 is a loose name for online services built around shared networks and user-held accounts. It’s an idea in progress, not a single new website.</p></div>
-          <dl class="definition-list">
-            <div class="definition"><dt><span class="term-symbol" aria-hidden="true">◫</span> Blockchain</dt><dd>A record kept by a network of computers. On a public blockchain, anyone can check transactions instead of asking one company for its version.</dd></div>
-            <div class="definition"><dt><span class="term-symbol" aria-hidden="true">⌘</span> Wallet</dt><dd>An app that manages your blockchain account and asks you to approve actions. It holds the keys to your account, so its recovery phrase stays private.</dd></div>
-            <div class="definition"><dt><span class="term-symbol" aria-hidden="true">{ }</span> Smart contract</dt><dd>A program on a blockchain. When someone uses it, the program follows the rules written in its code.</dd></div>
-          </dl>
+      <nav class="chapter-nav" aria-label="On this page">
+        <div class="container chapter-list">
+          <a href="#overview"><span>01</span> The big idea</a>
+          <a href="#building-blocks"><span>02</span> How it works</a>
+          <a href="#possibilities"><span>03</span> What people build</a>
+          <a href="#reality-check"><span>04</span> Keep your bearings</a>
+        </div>
+      </nav>
+
+      <section class="overview section-pad" id="overview" aria-labelledby="overview-title">
+        <div class="container overview-grid">
+          <div class="section-heading">
+            <p class="section-label">01 / The big idea</p>
+            <h2 id="overview-title">An internet you can take part in.</h2>
+          </div>
+          <div class="overview-copy">
+            <p class="lead">Web3 is a broad idea: use shared networks so an online service doesn't have to depend entirely on one company's database.</p>
+            <p>In some Web3 apps, a wallet lets you hold digital assets and use the same account in more than one place. People also use blockchains to make records and rules visible to anyone who wants to check them.</p>
+            <p>That doesn't make every project open, safe, or useful. It does give builders a different set of tools.</p>
+          </div>
+        </div>
+        <div class="container era-strip" aria-label="A simplified view of web eras">
+          <div><span>Web1</span><strong>Read</strong><p>Visit pages and find information.</p></div>
+          <div><span>Web2</span><strong>Read + write</strong><p>Post, connect, and create on platforms.</p></div>
+          <div class="era-active"><span>Web3</span><strong>Read + write + participate</strong><p>Use wallets and shared networks where they add value.</p></div>
+        </div>
+        <p class="container era-footnote">These labels are a useful shorthand, not strict eras. All three kinds of experience still exist together.</p>
+      </section>
+
+      <section class="building section-pad" id="building-blocks" aria-labelledby="building-title">
+        <div class="container">
+          <div class="section-heading building-heading">
+            <p class="section-label">02 / How it works</p>
+            <h2 id="building-title">Three pieces to know first.</h2>
+            <p>A typical Web3 app combines a place to keep a record, a way for you to approve actions, and code that defines what happens next.</p>
+          </div>
+          <div class="blocks-grid">
+            <article class="block-item">
+              <div class="block-art block-art-chain" aria-hidden="true"><span>▦</span></div>
+              <span class="block-number">01 / shared record</span>
+              <h3>Blockchain</h3>
+              <p>Many computers keep copies of the same record. On a public blockchain, people can inspect transactions instead of relying only on a private database.</p>
+              <p class="block-example"><strong>In practice:</strong> You can check whether a token moved from one address to another.</p>
+            </article>
+            <article class="block-item">
+              <div class="block-art block-art-wallet" aria-hidden="true"><span>⌁</span></div>
+              <span class="block-number">02 / your key</span>
+              <h3>Wallet</h3>
+              <p>A wallet manages your blockchain account. It asks you to approve a connection or sign a request, so you stay in charge of when an app can interact with it.</p>
+              <p class="block-example"><strong>In practice:</strong> You connect to an app without creating another password for that app.</p>
+            </article>
+            <article class="block-item">
+              <div class="block-art block-art-code" aria-hidden="true"><span>{ }</span></div>
+              <span class="block-number">03 / shared rules</span>
+              <h3>Smart contract</h3>
+              <p>A program stored on a blockchain. When called, it follows the rules written in its code. Anyone can use compatible apps to interact with it.</p>
+              <p class="block-example"><strong>In practice:</strong> A group can set rules for how a shared treasury is used.</p>
+            </article>
+          </div>
+          <div class="building-summary"><span class="summary-mark" aria-hidden="true">↳</span><p><strong>Put together:</strong> Your wallet approves an action, a smart contract handles it, and the blockchain records the result.</p></div>
         </div>
       </section>
 
-      <section class="example-intro" id="examples" aria-labelledby="examples-title"><div class="wrap"><p class="section-index">02 / In practice</p><div class="example-heading"><h2 id="examples-title">What can you<br />actually <i>do</i> with it?</h2><p>There isn’t one answer. These are four ways people are using shared networks today.</p></div></div></section>
-      <section class="examples" aria-label="Web3 examples"><div class="wrap example-rows">
-        <article class="example-row"><span class="example-glyph glyph-coin" aria-hidden="true">◎</span><div><h3>Send value</h3><p>Cryptocurrencies can move between people without a bank in the middle. Prices fluctuate, and network fees may apply.</p></div><span class="example-name">Crypto</span></article>
-        <article class="example-row"><span class="example-glyph glyph-nft" aria-hidden="true">▧</span><div><h3>Own a unique token</h3><p>An NFT can be linked to art, a collectible, or a membership. The token is yours; rights to the linked item depend on its terms.</p></div><span class="example-name">NFTs</span></article>
-        <article class="example-row"><span class="example-glyph glyph-dao" aria-hidden="true">✳</span><div><h3>Make decisions together</h3><p>A DAO is an online group that can use shared rules and voting to coordinate its work.</p></div><span class="example-name">DAOs</span></article>
-        <article class="example-row"><span class="example-glyph glyph-app" aria-hidden="true">↗</span><div><h3>Carry things between apps</h3><p>Some decentralized apps let you use the same wallet or digital items in different places, when those apps support them.</p></div><span class="example-name">dApps</span></article>
-      </div></section>
-
-      <section class="wallet-section section-space" id="try-it" aria-labelledby="wallet-title">
-        <div class="wrap wallet-grid">
-          <div><p class="section-index">03 / Try it, if you like</p><h2 id="wallet-title">A wallet is a key.<br />You decide when<br />to use it.</h2><p class="wallet-copy">You can learn everything on this page without connecting. If you have MetaMask in this browser, try the button to see how an app asks for access to your public account.</p></div>
-          <div class="wallet-panel"><span class="panel-illustration" aria-hidden="true"><span>✳</span></span><h3>Try a connection</h3><p>MetaMask will ask before sharing your public wallet address with this page. Nothing will be signed or sent.</p><button class="connect-button" type="button" data-connect-wallet>Connect MetaMask <span aria-hidden="true">↗</span></button><p class="wallet-status" id="wallet-status" role="status" aria-live="polite">No wallet needed to keep reading.</p></div>
+      <section class="possibilities section-pad" id="possibilities" aria-labelledby="possibilities-title">
+        <div class="container">
+          <div class="possibilities-head">
+            <div><p class="section-label">03 / What people build</p><h2 id="possibilities-title">More than coins.</h2></div>
+            <p>Web3 covers money, culture, coordination, and software. Here are four common directions, without the sales pitch.</p>
+          </div>
+          <div class="use-grid">
+            <article class="use-card use-crypto"><span class="use-icon" aria-hidden="true">↗</span><span class="use-tag">CRYPTOCURRENCIES</span><h3>Move value</h3><p>Digital currencies can be sent between people on a blockchain. Fees and prices can change, sometimes quickly.</p></article>
+            <article class="use-card use-nft"><span class="use-icon" aria-hidden="true">◇</span><span class="use-tag">NFTs</span><h3>Prove a token is yours</h3><p>An NFT is a unique token that can point to art, a ticket, or a membership. Owning it doesn't automatically give you copyright.</p></article>
+            <article class="use-card use-dao"><span class="use-icon" aria-hidden="true">◎</span><span class="use-tag">DAOs</span><h3>Coordinate a group</h3><p>Some online communities use shared rules and voting to manage decisions or funds. How much power members get varies.</p></article>
+            <article class="use-card use-dapp"><span class="use-icon" aria-hidden="true">⌘</span><span class="use-tag">DECENTRALIZED APPS</span><h3>Build on shared tools</h3><p>Apps can use blockchains and smart contracts. Some let you bring the same wallet or digital items to other compatible apps.</p></article>
+          </div>
         </div>
-        <div class="wrap safety-line"><strong>One rule worth remembering</strong><span>Never type your wallet recovery phrase into a website. Check every request before approving it.</span></div>
+      </section>
+
+      <section class="reality section-pad" id="reality-check" aria-labelledby="reality-title">
+        <div class="container reality-grid">
+          <div class="reality-heading"><p class="section-label">04 / Keep your bearings</p><h2 id="reality-title">Interesting tools.<br />Real tradeoffs.</h2><p>The best way to explore Web3 is with curiosity and a few good questions.</p></div>
+          <div class="reality-list">
+            <div><span class="reality-symbol" aria-hidden="true">?</span><h3>Who is really in control?</h3><p>“Decentralized” is a spectrum. Check who runs the app, who can change its rules, and where your data is kept.</p></div>
+            <div><span class="reality-symbol" aria-hidden="true">!</span><h3>What am I approving?</h3><p>A wallet connection shares your public address. A signature or transaction can do much more. Read the request before you approve it.</p></div>
+            <div><span class="reality-symbol" aria-hidden="true">↺</span><h3>Can this be undone?</h3><p>Blockchain transactions are often difficult or impossible to reverse. Smart contracts can also contain bugs.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="wallet-section section-pad" id="wallet" aria-labelledby="wallet-title">
+        <div class="container wallet-grid">
+          <div class="wallet-intro"><p class="section-label">Your first interaction</p><h2 id="wallet-title">Try a wallet connection.</h2><p>This demo asks MetaMask for permission to show your public account address. It does not sign a message, make a transaction, or move funds.</p><ol><li>Use a browser with MetaMask installed.</li><li>Unlock MetaMask and select the button.</li><li>Read the request before you approve it.</li></ol></div>
+          <div class="wallet-panel">
+            <div class="wallet-panel-top"><span class="panel-orbit" aria-hidden="true">◉</span><span>WALLET DEMO</span></div>
+            <h3>Your wallet stays yours.</h3>
+            <p>Connecting only lets this page see your public address. You can decline and keep reading.</p>
+            <button class="connect-button" type="button" data-connect-wallet>Connect MetaMask <span aria-hidden="true">↗</span></button>
+            <p class="wallet-status" id="wallet-status" role="status" aria-live="polite">Not connected. No wallet is needed to explore this guide.</p>
+            <div class="panel-safety"><span aria-hidden="true">✳</span> Never enter your recovery phrase on a website.</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq section-pad" aria-labelledby="faq-title">
+        <div class="container faq-grid">
+          <div><p class="section-label">Before you go</p><h2 id="faq-title">A few good questions.</h2></div>
+          <div class="faq-list">
+            <details><summary>Do I have to buy crypto to learn Web3?</summary><p>No. Reading about it and exploring many public records costs nothing. Some app actions require network fees, but this page does not.</p></details>
+            <details><summary>Does connecting a wallet spend money?</summary><p>No. A connection request asks for access to your public account address. Signing messages, approving contracts, and sending transactions are separate requests to review carefully.</p></details>
+            <details><summary>Is Web3 replacing the rest of the internet?</summary><p>Probably not as a clean swap. Web3 tools often work alongside familiar websites and services. Whether they help depends on the problem being solved.</p></details>
+          </div>
+        </div>
       </section>
     </main>
 
-    <footer class="site-footer"><div class="wrap footer-inner"><a class="brand" href="#top" aria-label="Common Ground, back to top"><span class="brand-symbol" aria-hidden="true">✳</span><span>common ground</span></a><p>Made for the curious, not just the crypto crowd.</p><a href="#top">Back to top ↑</a></div></footer>
+    <footer class="site-footer"><div class="container footer-inner"><a class="brand" href="#top" aria-label="Web3Beacon, back to top"><img src="logo-mark.svg" alt="" width="38" height="38" /><span>Web3<span class="brand-accent">Beacon</span><span class="brand-period">.</span></span></a><p>Stay curious. Keep your keys safe.</p><a href="#top">Back to top ↑</a></div></footer>
   </body>
 </html>

@@ -1,41 +1,52 @@
-# Common Ground
+# Web3Beacon
 
-Common Ground is a responsive, beginner-friendly field guide to Web3. It explains the vocabulary first, then gives concrete examples of how people use shared networks. The site uses HTML, CSS, and a small amount of JavaScript for the optional MetaMask connection. No build step or account is required to read it.
+Web3Beacon is a responsive, beginner-friendly guide to the decentralized web. It starts with a plain-language overview, shows how a blockchain, wallet, and smart contract fit together, then explores real uses and tradeoffs. A small MetaMask demo lets visitors try connecting a wallet without signing a message or making a transaction.
 
-## Web3 concepts covered
+The site is built with semantic HTML, CSS, and a small amount of JavaScript. There is no framework or build step.
 
-- **Decentralization:** Some online services can run on shared networks rather than relying on one company to keep the records.
-- **Blockchain:** A record maintained by multiple computers. Public blockchains make transactions and program activity verifiable.
-- **Wallets:** Tools for managing blockchain accounts and signing requests. A wallet connection does not require buying anything.
-- **Smart contracts:** Programs stored on a blockchain that execute their written rules when invoked.
-- **Cryptocurrencies:** Digital assets that can be transferred on blockchain networks. Their prices and transaction fees can vary.
-- **NFTs:** Unique tokens that can be linked to art, access, or other items. Owning a token does not automatically grant copyright or other rights to the linked item.
-- **DAOs:** Online groups that can use shared rules and voting to coordinate decisions.
-- **dApps:** Applications that interact with blockchain networks; some allow a wallet or digital items to work across compatible services.
+## What the guide covers
+
+| Concept | How the site explains it |
+| --- | --- |
+| Decentralization | Shared networks can reduce reliance on a single company's database, but control varies by project. |
+| Blockchain | A record maintained by multiple computers; activity on public chains can be inspected. |
+| Wallet | A tool for managing an account and approving requests. Recovery phrases must stay private. |
+| Smart contract | A program stored on a blockchain that follows its written rules when called. |
+| Cryptocurrency | Digital value that can be sent on a blockchain, with variable prices and fees. |
+| NFT | A unique token that may link to art, access, or another item; ownership does not automatically grant copyright. |
+| DAO | A group that may use shared rules and voting to coordinate decisions or funds. |
+| dApp | An application that uses blockchain tools and may work with a wallet across compatible services. |
+
+The Web1/Web2/Web3 comparison is presented as a learning shorthand, not a strict timeline. The guide also covers transaction reversibility, contract bugs, and the difference between connecting a wallet and approving a transaction.
 
 ## View the site
 
-Open `index.html` in a browser to read the page. The layout adapts to desktop, tablet, and mobile widths. It includes keyboard focus styles, a skip link, semantic sections, and reduced-motion support.
-
-## Optional wallet connection
-
-To test with the MetaMask browser extension, serve the folder locally and open the local address **in the browser where MetaMask is installed**:
+Open `index.html` in a browser. For the MetaMask demo, serve the folder locally and open the page in the browser where the MetaMask extension is installed:
 
 ```sh
 python3 -m http.server 8000
 ```
 
-Then visit `http://localhost:8000`, unlock MetaMask, and select **Connect MetaMask**. Approving the request shares your public account address with the page. The page displays a shortened address and responds to account changes. It discovers MetaMask through EIP-6963 when available, then checks legacy injected providers. If MetaMask is unavailable or a request is declined, it shows a clear message. It never asks for a recovery phrase, signs a transaction, or sends funds.
+Visit `http://localhost:8000`, unlock MetaMask, select **Connect MetaMask**, and review its prompt. On approval, the page shows a shortened public address. It supports EIP-6963 provider discovery and legacy injected providers, account changes, declined requests, and pending requests. The demo never asks for a recovery phrase, signs a message, or moves funds.
 
-Browser extensions may not run on `file://` pages or inside embedded browsers. A successful connection requires MetaMask to be enabled in the browser that opens the localhost page.
+Browser extensions may not run on `file://` pages or inside embedded browsers. A live connection requires MetaMask to be enabled in the browser opening the localhost page.
 
-Run the wallet interaction checks with `node --test tests/wallet.test.js`. They simulate provider discovery, connection, rejection, account changes, and a missing extension. A real MetaMask connection still needs the browser extension and user approval.
+## Checks
+
+```sh
+node --check script.js
+node --test tests/wallet.test.js
+```
+
+The wallet tests simulate provider discovery, connection, rejection, account changes, and a missing extension. A live MetaMask test still needs the extension and a user-approved prompt.
 
 ## Files
 
-- `index.html` — content and page structure
-- `styles.css` — visual design and responsive layout
-- `script.js` — optional wallet interaction
-- `favicon.svg` — site icon
+- `index.html` — page content and structure
+- `styles.css` — layout, visual design, and responsive behavior
+- `script.js` — optional MetaMask connection
+- `beacon-map.svg` — hero illustration
+- `logo-mark.svg` and `favicon.svg` — Web3Beacon identity
+- `tests/wallet.test.js` — wallet interaction checks
 
 This is an educational introduction, not financial advice. Always review wallet requests before approving them.
