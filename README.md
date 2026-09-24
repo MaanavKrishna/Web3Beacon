@@ -4,7 +4,9 @@ Web3Beacon is a responsive, beginner-friendly guide to the decentralized web. It
 
 The site is built with semantic HTML, CSS, and a small amount of JavaScript. There is no framework or build step.
 
-**Live site:** [https://maanavkrishna.github.io/Web3Beacon/](https://maanavkrishna.github.io/Web3Beacon/)
+## Live deployment
+
+[Visit Web3Beacon](https://maanavkrishna.github.io/Web3Beacon/) to explore the guide online. The site is hosted on GitHub Pages and updates when changes are pushed to `main`.
 
 ## What the guide covers
 
@@ -21,7 +23,7 @@ The site is built with semantic HTML, CSS, and a small amount of JavaScript. The
 
 The Web1/Web2/Web3 comparison is presented as a learning shorthand, not a strict timeline. The guide also covers transaction reversibility, contract bugs, and the difference between connecting a wallet and approving a transaction.
 
-## View the site
+## Run locally
 
 Open `index.html` in a browser. For the MetaMask demo, serve the folder locally and open the page in the browser where the MetaMask extension is installed:
 
