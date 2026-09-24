@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 590" role="img" aria-labelledby="title desc">
+  <title id="title">The Web3Beacon lighthouse</title>
+  <desc id="desc">A lighthouse sends warm signals across a connected sea at night.</desc>
+  <defs>
+    <radialGradient id="glow"><stop stop-color="#ffe5a5" stop-opacity=".72"/><stop offset=".38" stop-color="#ffd782" stop-opacity=".21"/><stop offset="1" stop-color="#ffd782" stop-opacity="0"/></radialGradient>
+    <linearGradient id="tower" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e8f5ef"/><stop offset=".55" stop-color="#b8d8ce"/><stop offset="1" stop-color="#79ada3"/></linearGradient>
+    <linearGradient id="land" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#49887b"/><stop offset="1" stop-color="#235b5a"/></linearGradient>
+    <linearGradient id="beam" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#ffde94" stop-opacity=".3"/><stop offset="1" stop-color="#ffde94" stop-opacity="0"/></linearGradient>
+  </defs>
+  <circle cx="332" cy="244" r="246" fill="url(#glow)"/>
+  <path d="M316 185 49 68 77 274Z" fill="url(#beam)" opacity=".8"/>
+  <path d="M342 185 597 49 587 271Z" fill="url(#beam)" opacity=".7"/>
+  <path d="M318 191 164 6 378 93Z" fill="#ffd782" opacity=".08"/>
+  <path d="M347 192 501 16 299 89Z" fill="#ffd782" opacity=".08"/>
+  <circle cx="331" cy="194" r="113" fill="none" stroke="#cce9d9" stroke-opacity=".25" stroke-width="1.5" stroke-dasharray="2 11"/>
+  <circle cx="331" cy="194" r="177" fill="none" stroke="#cce9d9" stroke-opacity=".13" stroke-width="1.5" stroke-dasharray="2 14"/>
+  <path d="M48 429c88-19 146-16 213 1 67 17 144 17 208-1 65-18 103-13 145-4M37 464c87-20 153-13 226 4 73 17 138 15 202-1 64-16 107-17 150-8M52 502c73-15 139-13 203 2 75 18 150 17 224 1 61-13 99-15 139-7" fill="none" stroke="#6ba99a" stroke-opacity=".42" stroke-width="2" stroke-linecap="round"/>
+  <path d="M69 535c80-12 129-5 190 8 73 16 149 14 218-2 58-14 100-18 141-10" fill="none" stroke="#93cab4" stroke-opacity=".25" stroke-width="2"/>
+  <path d="M174 432c61-48 121-66 157-66 62 0 120 24 172 67l-30 28H204Z" fill="url(#land)"/>
+  <path d="M204 460c81-21 176-18 269 0" fill="none" stroke="#73b09e" stroke-opacity=".5" stroke-width="3"/>
+  <path d="M287 362h89l14 72H273Z" fill="#305f5e"/>
+  <path d="M307 239h49l23 124H284Z" fill="url(#tower)" stroke="#b3d8c6" stroke-width="2"/>
+  <path d="M307 239h15l-7 124h-31Z" fill="#eef7e9" opacity=".56"/>
+  <path d="M312 275h39M307 312h48" stroke="#7aa99a" stroke-width="4" opacity=".7"/>
+  <path d="M327 342a10 10 0 0 1 10 10v11h-20v-11a10 10 0 0 1 10-10Z" fill="#25585a"/>
+  <path d="M302 223h59v18h-59Z" fill="#e3f3e7" stroke="#b8dcca" stroke-width="2"/>
+  <path d="M311 195h41v29h-41Z" fill="#ffde91" stroke="#f8c975" stroke-width="2"/>
+  <path d="M307 193c7-9 15-14 25-14s19 5 27 14Z" fill="#d9eee0"/>
+  <path d="M332 179v-19" stroke="#d9eee0" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="332" cy="199" r="12" fill="#fff1b7"/>
+  <circle cx="332" cy="199" r="5" fill="#fffce8"/>
+  <path d="M298 247h66" stroke="#276363" stroke-width="5" stroke-linecap="round"/>
+  <path d="M295 433h74" stroke="#a9d0ba" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="128" cy="290" r="6" fill="#cef0a9"/><circle cx="128" cy="290" r="16" fill="none" stroke="#cef0a9" stroke-opacity=".45"/>
+  <circle cx="546" cy="322" r="6" fill="#ffd782"/><circle cx="546" cy="322" r="16" fill="none" stroke="#ffd782" stroke-opacity=".45"/>
+  <circle cx="99" cy="174" r="4" fill="#e8f5ef"/><circle cx="557" cy="141" r="4" fill="#e8f5ef"/><circle cx="494" cy="67" r="3" fill="#cef0a9"/><circle cx="214" cy="85" r="3" fill="#cef0a9"/>
+  <path d="M127 290c45-34 83-25 123-47M545 322c-42-16-85-15-128-56" fill="none" stroke="#a5d5bd" stroke-opacity=".55" stroke-width="2" stroke-dasharray="5 8"/>
+  <path d="m243 242 8 1-4 7m177 16-7-1 3-7" fill="none" stroke="#a5d5bd" stroke-opacity=".55" stroke-width="2"/>
+  <path d="M77 402h34M542 401h34M528 108h20M108 103h20" stroke="#b1d2bf" stroke-opacity=".38" stroke-width="2" stroke-linecap="round"/>
+</svg>

@@ -68,9 +68,7 @@ async function connectMetaMask() {
     }
 
     if (!provider) {
-      clearAccount(location.protocol === 'file:'
-        ? 'MetaMask is not available here. Open this page on localhost in a browser with MetaMask enabled.'
-        : 'MetaMask is not available in this browser. Install or enable the extension, then try again.');
+      clearAccount('Wallet not detected in this browser.');
       status.scrollIntoView({ block: 'nearest' });
       return;
     }

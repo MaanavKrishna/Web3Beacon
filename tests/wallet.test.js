@@ -72,10 +72,10 @@ test('explains a declined request and a request already open in MetaMask', async
   }
 });
 
-test('explains why a local file without an injected provider cannot connect', async () => {
+test('keeps the missing-wallet message short when no provider is injected', async () => {
   const page = setup({ protocol: 'file:' });
   await page.buttons[0].click();
-  assert.match(page.status.textContent, /localhost/);
+  assert.equal(page.status.textContent, 'Wallet not detected in this browser.');
   assert.equal(page.status.scrolled, true);
 });
 
